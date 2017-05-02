@@ -1,0 +1,17 @@
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\db_saber.DAL.dll.config
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\db_saber.DAL.dll
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\db_saber.DAL.pdb
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\db_saber.Model.dll
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\EntityFramework.dll
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\Newtonsoft.Json.dll
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\PagedList.dll
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\PagedList.Mvc.dll
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\db_saber.Model.pdb
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\EntityFramework.xml
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\Newtonsoft.Json.xml
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\PagedList.xml
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\PagedList.Mvc.xml
+E:\Work\CRMSystem\db_saber.DAL\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\Work\CRMSystem\db_saber.DAL\obj\Release\db_saber.DAL.csprojResolveAssemblyReference.cache
+E:\Work\CRMSystem\db_saber.DAL\obj\Release\db_saber.DAL.dll
+E:\Work\CRMSystem\db_saber.DAL\obj\Release\db_saber.DAL.pdb

@@ -1,0 +1,8 @@
+E:\Work\CRMSystem\db_saber.Model\bin\Release\db_saber.Model.dll.config
+E:\Work\CRMSystem\db_saber.Model\bin\Release\db_saber.Model.dll
+E:\Work\CRMSystem\db_saber.Model\bin\Release\db_saber.Model.pdb
+E:\Work\CRMSystem\db_saber.Model\bin\Release\EntityFramework.dll
+E:\Work\CRMSystem\db_saber.Model\bin\Release\EntityFramework.xml
+E:\Work\CRMSystem\db_saber.Model\bin\Release\zh-Hans\EntityFramework.resources.dll
+E:\Work\CRMSystem\db_saber.Model\obj\Release\db_saber.Model.dll
+E:\Work\CRMSystem\db_saber.Model\obj\Release\db_saber.Model.pdb

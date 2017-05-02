@@ -1,0 +1,51 @@
+﻿@model PagedList.IPagedList<db_saber.Model.Sys_Master>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+}
+<link href="~/Content/CRM_System/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/PagedList.css" rel="stylesheet" />
+<script src="~/Content/CRM_System/js/jquery.min.js"></script>
+<script type="text/javascript">
+    var hour, minute, second;//时 分 秒
+    hour = minute = second = 0;//初始化
+    var millisecond = 0;//毫秒
+    var int;
+    $(function () {
+        int = setInterval(timer, 50);
+    });
+
+    function timer()//计时
+    {
+        millisecond = millisecond + 50;
+        if (millisecond >= 1000) {
+            millisecond = 0;
+            second = second + 1;
+        }
+        if (second >= 60) {
+            second = 0;
+            minute = minute + 1;
+        }
+
+        if (minute >= 60) {
+            minute = 0;
+            hour = hour + 1;
+        }
+        $('#timeinfo').html(hour + '时' + minute + '分' + second + '秒' + millisecond); 
+    }
+
+</script>
+<h2>第@(ViewBag.pageIndex)页</h2>
+<h2>共@(ViewBag.totalCount)人需要召唤</h2>
+<h2>在当前页面已经停留<span id="timeinfo"></span></h2>
+
+<textarea style="width:100%;">
+    @foreach (var item in Model)
+    {
+        @("@" + item.user_name +" ")
+    }
+</textarea>
+
+
+
+<div class="OptionPagerList" style="text-align:center;">@Html.PagedListPager(Model, page => Url.Action("Index", new { page = page}))  </div>

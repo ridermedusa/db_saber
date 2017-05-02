@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_SaberModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="db_SaberEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Sys_Error_log" EntityType="db_SaberModel.Sys_Error_log" />
+    <EntitySet Name="Sys_Master" EntityType="db_SaberModel.Sys_Master" />
+    <EntitySet Name="Sys_Return" EntityType="db_SaberModel.Sys_Return" />
+  </EntityContainer>
+  <EntityType Name="Sys_Error_log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ErrType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="ErrMsg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+  </EntityType>
+  <EntityType Name="Sys_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="32" FixedLength="true" Unicode="false" />
+    <Property Name="DataField" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="user_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="props" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="post_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="is_anonym" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="forum_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="thread_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="contenttext" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="post_no" Type="Int32" />
+    <Property Name="type" Type="Int32" />
+    <Property Name="comment_num" Type="Int32" />
+    <Property Name="post_index" Type="Int32" />
+    <Property Name="pb_tpoint" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Sys_Return">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="32" FixedLength="true" Unicode="false" />
+    <Property Name="MasterId" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+    <Property Name="DataField" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="pid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="spid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Context" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

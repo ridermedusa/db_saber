@@ -1,0 +1,17 @@
+F:\Work\N牛小散\db_saber.Model\bin\Debug\db_saber.Model.dll.config
+F:\Work\N牛小散\db_saber.Model\bin\Debug\db_saber.Model.dll
+F:\Work\N牛小散\db_saber.Model\bin\Debug\db_saber.Model.pdb
+F:\Work\N牛小散\db_saber.Model\bin\Debug\EntityFramework.dll
+F:\Work\N牛小散\db_saber.Model\bin\Debug\EntityFramework.xml
+F:\Work\N牛小散\db_saber.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\Work\N牛小散\db_saber.Model\obj\Debug\db_saber.Model.dll
+F:\Work\N牛小散\db_saber.Model\obj\Debug\db_saber.Model.pdb
+E:\Work\N牛小散_Web\db_saber.Model\bin\Debug\db_saber.Model.dll.config
+E:\Work\N牛小散_Web\db_saber.Model\bin\Debug\db_saber.Model.dll
+E:\Work\N牛小散_Web\db_saber.Model\bin\Debug\db_saber.Model.pdb
+E:\Work\N牛小散_Web\db_saber.Model\bin\Debug\EntityFramework.dll
+E:\Work\N牛小散_Web\db_saber.Model\bin\Debug\EntityFramework.xml
+E:\Work\N牛小散_Web\db_saber.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Work\N牛小散_Web\db_saber.Model\obj\Debug\db_saber.Model.dll
+E:\Work\N牛小散_Web\db_saber.Model\obj\Debug\db_saber.Model.pdb
+E:\Work\N牛小散_Web\db_saber.Model\obj\Debug\db_saber.Model.csprojResolveAssemblyReference.cache

@@ -1,0 +1,9 @@
+E:\Work\CRMSystem\db_saber.Model\bin\Debug\db_saber.Model.dll.config
+E:\Work\CRMSystem\db_saber.Model\bin\Debug\db_saber.Model.dll
+E:\Work\CRMSystem\db_saber.Model\bin\Debug\db_saber.Model.pdb
+E:\Work\CRMSystem\db_saber.Model\bin\Debug\EntityFramework.dll
+E:\Work\CRMSystem\db_saber.Model\bin\Debug\EntityFramework.xml
+E:\Work\CRMSystem\db_saber.Model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Work\CRMSystem\db_saber.Model\obj\Debug\db_saber.Model.dll
+E:\Work\CRMSystem\db_saber.Model\obj\Debug\db_saber.Model.pdb
+E:\Work\CRMSystem\db_saber.Model\obj\Debug\db_saber.Model.csprojResolveAssemblyReference.cache

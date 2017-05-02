@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="db_SaberModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Sys_Error_log">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ErrType" Type="nvarchar" MaxLength="200" />
+    <Property Name="ErrMsg" Type="nvarchar(max)" />
+    <Property Name="Date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="Sys_Master">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="char" MaxLength="32" Nullable="false" />
+    <Property Name="DataField" Type="nvarchar(max)" />
+    <Property Name="user_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="props" Type="nvarchar(max)" />
+    <Property Name="post_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="is_anonym" Type="nvarchar" MaxLength="50" />
+    <Property Name="forum_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="thread_id" Type="nvarchar" MaxLength="50" />
+    <Property Name="contenttext" Type="nvarchar(max)" />
+    <Property Name="post_no" Type="int" />
+    <Property Name="type" Type="int" />
+    <Property Name="comment_num" Type="int" />
+    <Property Name="post_index" Type="int" />
+    <Property Name="pb_tpoint" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Sys_Return">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="char" MaxLength="32" Nullable="false" />
+    <Property Name="MasterId" Type="char" MaxLength="32" />
+    <Property Name="DataField" Type="nvarchar(max)" />
+    <Property Name="pid" Type="nvarchar" MaxLength="50" />
+    <Property Name="spid" Type="nvarchar" MaxLength="50" />
+    <Property Name="Context" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="db_SaberModelStoreContainer">
+    <EntitySet Name="Sys_Error_log" EntityType="Self.Sys_Error_log" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Master" EntityType="Self.Sys_Master" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sys_Return" EntityType="Self.Sys_Return" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

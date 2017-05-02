@@ -1,0 +1,17 @@
+E:\Work\db_saber\db_saber.DAL\obj\Debug\db_saber.DAL.csprojResolveAssemblyReference.cache
+E:\Work\db_saber\db_saber.DAL\bin\Debug\db_saber.DAL.dll.config
+E:\Work\db_saber\db_saber.DAL\bin\Debug\db_saber.DAL.dll
+E:\Work\db_saber\db_saber.DAL\bin\Debug\db_saber.DAL.pdb
+E:\Work\db_saber\db_saber.DAL\bin\Debug\db_saber.Model.dll
+E:\Work\db_saber\db_saber.DAL\bin\Debug\EntityFramework.dll
+E:\Work\db_saber\db_saber.DAL\bin\Debug\Newtonsoft.Json.dll
+E:\Work\db_saber\db_saber.DAL\bin\Debug\PagedList.dll
+E:\Work\db_saber\db_saber.DAL\bin\Debug\PagedList.Mvc.dll
+E:\Work\db_saber\db_saber.DAL\bin\Debug\db_saber.Model.pdb
+E:\Work\db_saber\db_saber.DAL\bin\Debug\EntityFramework.xml
+E:\Work\db_saber\db_saber.DAL\bin\Debug\Newtonsoft.Json.xml
+E:\Work\db_saber\db_saber.DAL\bin\Debug\PagedList.xml
+E:\Work\db_saber\db_saber.DAL\bin\Debug\PagedList.Mvc.xml
+E:\Work\db_saber\db_saber.DAL\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\Work\db_saber\db_saber.DAL\obj\Debug\db_saber.DAL.dll
+E:\Work\db_saber\db_saber.DAL\obj\Debug\db_saber.DAL.pdb

@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="db_SaberModelStoreContainer" CdmEntityContainer="db_SaberEntities">
+    <EntitySetMapping Name="Sys_Error_log">
+      <EntityTypeMapping TypeName="db_SaberModel.Sys_Error_log">
+        <MappingFragment StoreEntitySet="Sys_Error_log">
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="ErrMsg" ColumnName="ErrMsg" />
+          <ScalarProperty Name="ErrType" ColumnName="ErrType" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Master">
+      <EntityTypeMapping TypeName="db_SaberModel.Sys_Master">
+        <MappingFragment StoreEntitySet="Sys_Master">
+          <ScalarProperty Name="pb_tpoint" ColumnName="pb_tpoint" />
+          <ScalarProperty Name="post_index" ColumnName="post_index" />
+          <ScalarProperty Name="comment_num" ColumnName="comment_num" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="post_no" ColumnName="post_no" />
+          <ScalarProperty Name="contenttext" ColumnName="contenttext" />
+          <ScalarProperty Name="thread_id" ColumnName="thread_id" />
+          <ScalarProperty Name="forum_id" ColumnName="forum_id" />
+          <ScalarProperty Name="is_anonym" ColumnName="is_anonym" />
+          <ScalarProperty Name="post_id" ColumnName="post_id" />
+          <ScalarProperty Name="props" ColumnName="props" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="DataField" ColumnName="DataField" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sys_Return">
+      <EntityTypeMapping TypeName="db_SaberModel.Sys_Return">
+        <MappingFragment StoreEntitySet="Sys_Return">
+          <ScalarProperty Name="Context" ColumnName="Context" />
+          <ScalarProperty Name="spid" ColumnName="spid" />
+          <ScalarProperty Name="pid" ColumnName="pid" />
+          <ScalarProperty Name="DataField" ColumnName="DataField" />
+          <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

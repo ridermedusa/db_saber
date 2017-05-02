@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="db_SaberModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Sys_Error_log">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ErrType" Type="nvarchar" MaxLength="200" />
+          <Property Name="ErrMsg" Type="nvarchar(max)" />
+          <Property Name="Date" Type="datetime" />
+        </EntityType>
+        <EntityType Name="Sys_Master">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="DataField" Type="nvarchar(max)" />
+          <Property Name="user_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+          <Property Name="props" Type="nvarchar(max)" />
+          <Property Name="post_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="is_anonym" Type="nvarchar" MaxLength="50" />
+          <Property Name="forum_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="thread_id" Type="nvarchar" MaxLength="50" />
+          <Property Name="contenttext" Type="nvarchar(max)" />
+          <Property Name="post_no" Type="int" />
+          <Property Name="type" Type="int" />
+          <Property Name="comment_num" Type="int" />
+          <Property Name="post_index" Type="int" />
+          <Property Name="pb_tpoint" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Sys_Return">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="char" MaxLength="32" Nullable="false" />
+          <Property Name="MasterId" Type="char" MaxLength="32" />
+          <Property Name="DataField" Type="nvarchar(max)" />
+          <Property Name="pid" Type="nvarchar" MaxLength="50" />
+          <Property Name="spid" Type="nvarchar" MaxLength="50" />
+          <Property Name="Context" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="db_SaberModelStoreContainer">
+          <EntitySet Name="Sys_Error_log" EntityType="Self.Sys_Error_log" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sys_Master" EntityType="Self.Sys_Master" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Sys_Return" EntityType="Self.Sys_Return" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="db_SaberModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="db_SaberEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Sys_Error_log" EntityType="db_SaberModel.Sys_Error_log" />
+          <EntitySet Name="Sys_Master" EntityType="db_SaberModel.Sys_Master" />
+          <EntitySet Name="Sys_Return" EntityType="db_SaberModel.Sys_Return" />
+        </EntityContainer>
+        <EntityType Name="Sys_Error_log">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ErrType" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+          <Property Name="ErrMsg" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Date" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityType Name="Sys_Master">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="DataField" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="user_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="user_name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="props" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="post_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="is_anonym" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="forum_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="thread_id" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="contenttext" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="post_no" Type="Int32" />
+          <Property Name="type" Type="Int32" />
+          <Property Name="comment_num" Type="Int32" />
+          <Property Name="post_index" Type="Int32" />
+          <Property Name="pb_tpoint" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Sys_Return">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="MasterId" Type="String" MaxLength="32" FixedLength="true" Unicode="false" />
+          <Property Name="DataField" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="pid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="spid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="Context" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="db_SaberModelStoreContainer" CdmEntityContainer="db_SaberEntities">
+          <EntitySetMapping Name="Sys_Error_log">
+            <EntityTypeMapping TypeName="db_SaberModel.Sys_Error_log">
+              <MappingFragment StoreEntitySet="Sys_Error_log">
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="ErrMsg" ColumnName="ErrMsg" />
+                <ScalarProperty Name="ErrType" ColumnName="ErrType" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sys_Master">
+            <EntityTypeMapping TypeName="db_SaberModel.Sys_Master">
+              <MappingFragment StoreEntitySet="Sys_Master">
+                <ScalarProperty Name="pb_tpoint" ColumnName="pb_tpoint" />
+                <ScalarProperty Name="post_index" ColumnName="post_index" />
+                <ScalarProperty Name="comment_num" ColumnName="comment_num" />
+                <ScalarProperty Name="type" ColumnName="type" />
+                <ScalarProperty Name="post_no" ColumnName="post_no" />
+                <ScalarProperty Name="contenttext" ColumnName="contenttext" />
+                <ScalarProperty Name="thread_id" ColumnName="thread_id" />
+                <ScalarProperty Name="forum_id" ColumnName="forum_id" />
+                <ScalarProperty Name="is_anonym" ColumnName="is_anonym" />
+                <ScalarProperty Name="post_id" ColumnName="post_id" />
+                <ScalarProperty Name="props" ColumnName="props" />
+                <ScalarProperty Name="user_name" ColumnName="user_name" />
+                <ScalarProperty Name="user_id" ColumnName="user_id" />
+                <ScalarProperty Name="DataField" ColumnName="DataField" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Sys_Return">
+            <EntityTypeMapping TypeName="db_SaberModel.Sys_Return">
+              <MappingFragment StoreEntitySet="Sys_Return">
+                <ScalarProperty Name="Context" ColumnName="Context" />
+                <ScalarProperty Name="spid" ColumnName="spid" />
+                <ScalarProperty Name="pid" ColumnName="pid" />
+                <ScalarProperty Name="DataField" ColumnName="DataField" />
+                <ScalarProperty Name="MasterId" ColumnName="MasterId" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
